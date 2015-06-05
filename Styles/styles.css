@@ -1,0 +1,182 @@
+body
+{  
+  text-align:center;
+  background-color: #ffffff;
+  margin:0px;
+}
+input
+{
+  font-size: 11px;
+  font-family:Arial; 
+  color: #606060; 
+}
+
+input.text
+{
+  font-size: 11px;
+  font-family:Arial; 
+  color: #606060;
+  border:1px solid #c3c3c3; 
+}
+
+select
+{
+  text-align:left;
+  font-size: 12px;
+  font-family:Arial;
+  border:1px solid #c3c3c3; 
+  color: #606060; 
+}
+
+table.text
+{
+  font-size:11px;
+  font-family:Arial; 
+  text-align:left;
+  font-weight:bold;
+  color: #606060;
+}
+
+textarea
+{
+  font-size: 11px;
+  font-family:Arial;
+  border:1px solid #c3c3c3; 
+}
+
+.block
+{
+  margin-left: 50px;
+  padding:5px; 
+}
+
+.button
+{
+  color: #ffffff; 
+  border-width: 2px 1px 1px 2px;
+  border-color: LightSeaGreen DarkCyan DarkCyan LightSeaGreen;
+  background-color: Teal;
+  font-size: 11px;  
+  font-family: Verdana;  
+}
+
+.checkbox
+{
+  width: 100px;
+  text-align:left;
+  border:0px;  
+}
+
+.errorMsg 
+{
+  color:Red;
+  text-align:left;
+  font-family: Arial;
+  font-weight:bold; 
+  font-size: 12px;
+}
+
+.headerLabel
+{
+  font-size:11px;
+  font-family:Arial; 
+  text-align:left;
+  font-weight:bold; 
+}
+
+.listGroup
+{
+  text-align:left;
+  margin: 5px 0px 5px 5px;
+}  
+
+.longLabel
+{
+  font-size:11px;
+  font-family:Arial; 
+  text-align:left;
+  font-weight:bold;  
+}
+
+.pagetitle
+{
+  border-right: teal 1px solid;
+  border-top: teal 1px solid;
+  font-weight: bold;
+  font-size: 18px;
+  vertical-align: middle;
+  border-left: teal 1px solid;
+  width: 100%;
+  color: teal;
+  padding-top: 5px;
+  border-bottom: teal 1px solid;
+  height: 30px;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.sectionHeader 
+{
+  width:100%;
+  font-family:Verdana;
+  font-size:20px;
+  font-weight:bold; 
+  padding:1px 0px 1px 3px;
+  color: #ffffff;
+  background-color: #0000FF;   
+  border: 1px solid teal; 
+}
+
+#buttonBar
+{
+  width:90%;
+  text-align:center;
+  margin-top:10px; 
+}
+
+#errorBlock
+{
+  text-align:center;
+  width:40%; 
+  padding-bottom:25px;
+}
+
+#formContainer
+{
+  text-align:left;
+  width:700px; 
+  border: 1px solid teal;
+  padding: 20px;
+  font-family:Arial; 
+  font-size:12px;
+  color: #606060;
+  background-color: WhiteSmoke;
+}
+
+#caseStatus
+{
+  font-size: 16px;
+  font-family: Arial Narrow;
+  font-weight: 600;
+  color: Teal;
+  padding:5px;  
+  border: 1px solid #cc0000;  
+}
+
+#header
+{
+  background-color: #003366;
+  height: 30px;
+  margin:0px;   
+}
+
+#msg
+{
+  font-size: 14px;
+  font-family: Verdana;
+  font-weight: bold;
+  color: Teal;
+  padding:5px;
+  width: 75%;  
+  border: 1px solid Teal;
+}

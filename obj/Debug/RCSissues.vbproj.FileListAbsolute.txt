@@ -1,0 +1,11 @@
+C:\Prod\RCSissues\bin\RCSissues.dll.config
+C:\Prod\RCSissues\bin\RCSissues.dll
+C:\Prod\RCSissues\bin\RCSissues.pdb
+C:\Prod\RCSissues\bin\RCSissues.xml
+C:\Prod\RCSissues\obj\Debug\RCSissues.Global.resources
+C:\Prod\RCSissues\obj\Debug\RCSissues.WebForm1.resources
+C:\Prod\RCSissues\obj\Debug\RCSissues.RCSissues.resources
+C:\Prod\RCSissues\obj\Debug\RCSissues.vbproj.GenerateResource.Cache
+C:\Prod\RCSissues\obj\Debug\RCSissues.dll
+C:\Prod\RCSissues\obj\Debug\RCSissues.xml
+C:\Prod\RCSissues\obj\Debug\RCSissues.pdb

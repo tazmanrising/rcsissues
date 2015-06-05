@@ -1,0 +1,132 @@
+body
+{  
+  text-align:center;
+  background-color: #ffffff;
+  margin:0;
+}
+
+input.text
+{
+  font-size: 8pt;
+  font-family:Arial;  
+  color: #000000; 
+}
+
+select
+{
+  text-align:left;
+  font-size: 8pt;
+  font-family:Arial; 
+  color: #000000; 
+}
+
+table.text
+{
+  font-size:8pt;
+  font-family:Arial; 
+  text-align:left;
+  font-weight:bold;
+  color: #606060;
+}
+
+textarea
+{
+  font-size: 8pt;
+  font-family:Arial;  
+}
+
+.block
+{
+  margin-left: 15pt;
+  padding:2pt; 
+}
+
+.button
+{
+  display:none;
+}
+
+.checkbox
+{
+  width: 70pt;
+  text-align:left;  
+}
+
+.headerLabel
+{
+  font-size:8pt;
+  font-family:Arial; 
+  text-align:left;
+  font-weight:bold; 
+}
+
+.listGroup
+{
+  text-align:left;
+  margin: 2px 0px 2px 2px;
+}  
+
+.longLabel
+{
+  font-size:8pt;
+  font-family:Arial; 
+  text-align:left;
+  font-weight:bold;  
+}
+
+.pagetitle
+{
+  font-weight: bold;
+  font-size: 14pt;
+  vertical-align: middle;
+  width: 100%;
+  color: #000000;
+  padding-top: 3pt;
+  height: 18pt;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.sectionHeader 
+{
+  width:100%;
+  font-family:Verdana;
+  font-size:12pt;
+  font-weight:bold; 
+  color: #ffffff;
+  background-color: #cccccc;   
+}
+
+.text
+{
+  font-size: 8pt;
+  font-family:Arial;  
+  color: #000000; 
+}
+
+#buttonBar
+{
+  display:none
+}
+
+#errorBlock
+{
+  display:none;
+}
+
+#header
+{
+  display:none;
+}
+
+#formContainer
+{
+  text-align:left;
+  width:650px; 
+  border: 1px solid #000000;
+  padding: 16pt;
+  font-family:Arial; 
+  font-size:8pt;
+  color: #000000;
+  background: white;  
+}

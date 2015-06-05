@@ -1,0 +1,6 @@
+C:\Prod\RCSissues\ConAppTester\bin\Debug\ConAppTester.exe.config
+C:\Prod\RCSissues\ConAppTester\bin\Debug\ConAppTester.exe
+C:\Prod\RCSissues\ConAppTester\bin\Debug\ConAppTester.pdb
+C:\Prod\RCSissues\ConAppTester\obj\Debug\ConAppTester.csprojResolveAssemblyReference.cache
+C:\Prod\RCSissues\ConAppTester\obj\Debug\ConAppTester.exe
+C:\Prod\RCSissues\ConAppTester\obj\Debug\ConAppTester.pdb
