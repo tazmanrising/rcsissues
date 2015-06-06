@@ -23,20 +23,32 @@ namespace RCSIssues.ApiData
 				"~/Scripts/bootstrap.js",
 				"~/Scripts/respond.js"));
 
+			//bundles.Add(new ScriptBundle("~/bundles/app").Include(
+			//	"~/Scripts/angular.min.js",
+			//	"~/Scripts/angular-route.min.js",
+			//	"~/Scripts/underscore-min.js",
+			//	"~/Scripts/restangular.js",
+			//	"~/Scripts/ng-table.min.js",
+			//	"~/App/app.js",
+			//	"~/App/customers.controller.js"
+			//	));
+
 			bundles.Add(new ScriptBundle("~/bundles/app").Include(
 				"~/Scripts/angular.min.js",
-				"~/Scripts/angular-route.min.js",
 				"~/Scripts/underscore-min.js",
-				"~/Scripts/restangular.js",
-				"~/Scripts/ng-table.min.js",
-				"~/App/app.js",
-				"~/App/customers.controller.js"
+				"~/App/app.js"
 				));
+
+			//bundles.Add(new StyleBundle("~/Content/css").Include(
+			//		  "~/Content/bootstrap.css",
+			//		  "~/Content/ng-table.min.css",
+			//		  "~/Content/site.css"));
 
 			bundles.Add(new StyleBundle("~/Content/css").Include(
 					  "~/Content/bootstrap.css",
-					  "~/Content/ng-table.min.css",
 					  "~/Content/site.css"));
+
+
 		}
 	}
 }

@@ -17,7 +17,8 @@ namespace RCSIssues.ApiData.Controllers
 
 
 
-		[HttpGet]
+		//[HttpGet]
+		[HttpPost]
 		[ActionName("GetProblem")]
 		public List<Problem> Get()  //Get(int id) 
 		{

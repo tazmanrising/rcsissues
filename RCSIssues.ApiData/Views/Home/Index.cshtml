@@ -1,12 +1,112 @@
-﻿<div ng-controller="CustomersController as vm">
-    <h1>Customers</h1>
-    <p>
-        <input class="form-control" placeholder="Search by name" type="text" ng-model="vm.search" ng-model-options="{ debounce: 500 }" />
-    </p>
-    <table ng-table="vm.tableParams" class="table">
-        <tr ng-repeat="customer in $data">
-            <td data-title="'First Name'" data-sortable="'firstName'">{{customer.firstName}}</td>
-            <td data-title="'Last Name'" data-sortable="'lastName'">{{customer.lastName}}</td>
-        </tr>
-    </table>
-</div>
+﻿<script type="text/javascript">
+	// Global variable to hold data
+	// Load the Visualization API and the piechart package.
+	google.load('visualization', '1', { packages: ['corechart'] });
+</script> 
+
+
+<script type="text/javascript">
+	$(function () {
+		$.ajax(
+		{
+			type: 'POST',
+			dataType: 'json',
+			contentType: 'application/json',
+			url: '../api/Charting/getproblem',
+			data: '{}',
+			success: function (response) {
+				if (response.hasOwnProperty("d"))
+				{
+					drawchart(response.d); // calling method
+				} else {
+					drawchart(response); // calling method
+					drawchart2(response);
+				}
+				
+			},
+
+			error: function () { // (jqXHR, textStatus, errorThrown) {
+				//console.log(jqXHR.responseText || textStatus)
+				alert("Error loading data! Please try again.");
+			}
+		});
+	})
+
+
+
+  
+	function drawchart(dataValues) {  
+		// Callback that creates and populates a data table,  
+		// instantiates the pie chart, passes in the data and  
+		// draws it.  
+		var data = new google.visualization.DataTable();  
+  
+		data.addColumn('string', 'problemName');
+		data.addColumn('number', 'counted');
+    
+		for (var i = 0; i < dataValues.length; i++)   
+		{  
+			data.addRow([dataValues[i].problemName, dataValues[i].counted]);
+		}  
+		// Instantiate and draw our chart, passing in some options  
+		var chart =  new google.visualization.ColumnChart(document.getElementById('chartdiv'));  
+  
+		chart.draw(data,  
+		  {  
+		  	title: "Total Issues",  
+		  	position: "top",  
+		  	fontsize: "18px",  
+		  	chartArea: { width: '75%' },  
+		  });  
+	}  
+
+	////////////////////////
+
+	function drawchart2(dataValues) {
+		// Callback that creates and populates a data table,  
+		// instantiates the pie chart, passes in the data and  
+		// draws it.  
+
+		var data = new google.visualization.DataTable();
+
+		data.addColumn('string', 'problemName');
+		data.addColumn('number', 'counted');
+
+		for (var i = 0; i < dataValues.length; i++) {
+			data.addRow([dataValues[i].problemName, dataValues[i].counted]);
+		}
+
+
+		var options = {
+			title: 'Total Issues',
+			chartArea: { width: '40%' },
+			colors: ['#b0120a', '#ffab91'],
+			hAxis: {
+				title: 'Number of Issues',
+				minValue: 0
+			},
+			vAxis: {
+				title: 'All Issues'
+			}
+		};
+
+
+		// Instantiate and draw our chart, passing in some options  
+		var chart = new google.visualization.BarChart(document.getElementById('chartdiv2'));
+
+		chart.draw(data, options);
+		 
+	}
+
+</script> 
+
+
+<form id="form1">
+
+	<div id="chartdiv" style="width: 800px; height: 600px;">
+	</div>
+
+	<br /><br />
+	<div id="chartdiv2" style="width: 800px; height: 700px;">
+	</div>
+</form>  

@@ -1,0 +1,28 @@
+﻿
+<br />
+<div class="container">
+	Name: <input type="text" data-ng-model="xname" /> {{ xname }}   @*2 way data binding*@
+</div>
+
+<br />
+
+<div class="container" data-ng-init="names=['Dave','Tom','Brian']">
+	<h3>
+		Looping with the ng-repeat directive
+	</h3>
+	<ul>
+		<li data-ng-repeat="personName in names">{{ personName }}</li>
+	</ul>
+</div>
+
+<br />
+
+<div class="container" data-ng-init="customers=[{fullname: 'John smith', city: 'Phoenix'}, {fullname: 'Jane Doe', city: 'Arlington'}]">
+	FullName:
+	<br />
+	<input type="text" data-ng-model="fullname" /> @*{{ fullname }}*@
+	<br />
+	<ul>
+		<li data-ng-repeat="cust in customers | filter:fullname | orderBy:'city'">{{ cust.fullname }} - {{cust.city}}</li>
+	</ul>
+</div>

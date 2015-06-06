@@ -14,5 +14,14 @@ namespace RCSIssues.ApiData.Controllers
 
 			return View();
 		}
+
+
+		public ActionResult Grid()
+		{
+			return View();
+
+		}
+
+
 	}
 }

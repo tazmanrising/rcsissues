@@ -36,3 +36,7 @@ C:\Prod\RCSissues\RCSIssues.ApiData\bin\EntityFramework.SqlServer.xml
 C:\Prod\RCSissues\RCSIssues.ApiData\bin\Faker.NET4.dll
 C:\Prod\RCSissues\RCSIssues.ApiData\bin\FizzWare.NBuilder.dll
 C:\Prod\RCSissues\RCSIssues.ApiData\bin\System.Linq.Dynamic.dll
+C:\Prod\RCSissues\RCSIssues.ApiData\obj\Debug\RCSIssues.ApiData.csprojResolveAssemblyReference.cache
+C:\Prod\RCSissues\RCSIssues.ApiData\bin\System.Web.Cors.dll
+C:\Prod\RCSissues\RCSIssues.ApiData\bin\System.Web.Http.Cors.dll
+C:\Prod\RCSissues\RCSIssues.ApiData\bin\System.Web.Http.Cors.xml
