@@ -35,8 +35,9 @@ namespace RCSIssues.ApiData
 
 			bundles.Add(new ScriptBundle("~/bundles/app").Include(
 				"~/Scripts/angular.min.js",
-				"~/Scripts/underscore-min.js",
-				"~/App/app.js"
+				"~/Scripts/angular-route.min.js",
+				"~/Scripts/underscore-min.js"//,
+				//"~/App/app.js"
 				));
 
 			//bundles.Add(new StyleBundle("~/Content/css").Include(

@@ -22,6 +22,11 @@ namespace RCSIssues.ApiData.Controllers
 
 		}
 
+		public ActionResult GridDataBinding()
+		{
+			return View();
+		}
+
 
 	}
 }
